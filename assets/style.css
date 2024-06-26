@@ -36,6 +36,35 @@ body {
     font-size: 20px;
     margin: 0 10px;
 }
+.navbar .hamburger {
+    display: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .navbar .menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #1363DF;
+        width: 100%;
+        text-align: center;
+    }
+    .navbar .menu.active {
+        display: flex;
+    }
+    .navbar .menu li {
+        margin: 15px 0;
+    }
+    .navbar .hamburger {
+        display: block;
+    }
+}
 
 /* Nav Bar Ends */
 

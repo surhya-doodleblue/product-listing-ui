@@ -152,3 +152,8 @@ function hideLoader() {
 
 // Call the function to fetch and display products
 fetchAndDisplayProducts();
+
+function toggleMenu() {
+    const menu = document.querySelector('.navbar .menu');
+    menu.classList.toggle('active');
+}
